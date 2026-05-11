@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+    --primary-color: #ff7601;
+    --secondary-color: #086e05;
+    --success-color: #00c853;
+    --warning-color: #ffc107;
+    --white-color: #ffffff;
+    --accent-color: #887a05;
+    --soft-accent-color: #f4bd82;
+    --dark-color: #212529;
+    --red-color: #ED2F09;
+    --pearl-color: #f8f5ee;
+}
+
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-success {
+    background-color: var(--success-color) !important;
+    border-color: var(--success-color) !important;
+}
+
+.btn-warning {
+    background-color: var(--warning-color) !important;
+    border-color: var(--warning-color) !important;
+}
+
+.btn-secondary {
+     background-color: var(--secondary-color) !important;
+     border-color: var(--secondary-color) !important;
+}
+
+.btn-accent {
+     background-color: var(--accent-color) !important;
+     border-color: var(--accent-color) !important;
+}
+
+.btn-soft-accent {
+     background-color: var(--soft-accent-color) !important;
+     border-color: var(--soft-accent-color) !important;
+}
