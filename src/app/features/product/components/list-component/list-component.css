@@ -1,25 +1,44 @@
 .product-card {
+  position: relative;
   height: 400px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   border-radius: 15px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end; /* pousse le contenu en bas */
+  padding: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+/* overlay pour lisibilité */
+.product-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+}
+
+/* TAG en haut à droite */
+.product-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+}
+
+/* contenu en bas */
+.product-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+/* hover effet */
 .product-card:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-.card-img-overlay {
-  background: rgba(0, 0, 0, 0.45);
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.product-card:hover .card-img-overlay {
-  opacity: 1;
 }
 
 .price {

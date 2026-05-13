@@ -1,15 +1,27 @@
 <div class="container py-5">
   <div class="row g-4">
     <div class="col-md-4" *ngFor="let product of products">
-      <div class="card product-card text-white">
-        <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
-          <span class="badge bg-warning text-dark mb-2">{{ product.tag }}</span>
-          <h5 class="card-title fw-bold">{{ product.title }}</h5>
-          <p class="card-text">{{ product.description }}</p>
+
+      <div class="card product-card text-white"
+           [ngStyle]="{'background-image': 'url(' + product.image + ')'}">
+
+        <!-- TAG TOP RIGHT -->
+        <span class="badge bg-warning text-dark product-tag">
+          {{ product.tag }}
+        </span>
+
+        <!-- CONTENT BOTTOM -->
+        <div class="product-content text-center">
+          <h5 class="fw-bold">{{ product.title }}</h5>
+          <p class="small">{{ product.description }}</p>
           <h4 class="price fw-bold">{{ product.price }}</h4>
-          <a href="#" class="btn btn-light mt-2">Achetez Maintenant →</a>
+          <a href="#" class="btn btn-light btn-sm mt-2">
+            Achetez Maintenant →
+          </a>
         </div>
+
       </div>
+
     </div>
   </div>
 </div>
