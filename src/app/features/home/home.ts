@@ -2,10 +2,13 @@ import { Component } from '@angular/core';
 import { ListComponent } from '../product/components/list-component/list-component';
 import { NavbarComponent } from "../../shared/navbar-component/navbar-component";
 import { CommonModule } from '@angular/common';
+import { Faq } from "../../shared/faq/faq";
+import { Contact } from "../../shared/contact/contact";
+import { FooterComponent } from "../shared/components/footer-component/footer-component";
 
 @Component({
   selector: 'app-home',
-  imports: [ListComponent, NavbarComponent,CommonModule],
+  imports: [ListComponent, NavbarComponent, CommonModule, Faq, Contact, FooterComponent],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

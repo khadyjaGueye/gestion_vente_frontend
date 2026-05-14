@@ -1,0 +1,72 @@
+
+.contact-box {
+  background: var(--pink-color);
+  border-radius: 30px;
+  padding: 60px;
+  max-width: 900px;
+}
+
+.contact-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2f2b3d;
+}
+
+.contact-text {
+  color: #555;
+}
+
+.form-control {
+  border-radius: 15px;
+  padding: 12px;
+  border: 1px solid #999;
+  box-shadow: none !important;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+.contact-btn {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  background: var(--secondary-color);
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+}
+
+.text-color{
+    color: var(--secondary-color);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .faq-box,
+  .contact-box {
+    padding: 30px 20px;
+  }
+
+  .contact-title {
+    font-size: 30px;
+  }
+
+  .contact-image {
+    width: 220px;
+    height: 220px;
+  }
+}

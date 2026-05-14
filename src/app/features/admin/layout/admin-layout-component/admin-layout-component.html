@@ -1,0 +1,13 @@
+<div class="d-flex">
+  <!-- Sidebar -->
+  <app-sidebar-component></app-sidebar-component>
+
+  <!-- Main -->
+  <div class="flex-grow-1">
+    <app-topbar-component></app-topbar-component>
+
+    <div class="p-4 bg-light min-vh-100">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

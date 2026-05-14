@@ -1,0 +1,35 @@
+/* FAQ */
+.faq-box {
+  background: var(--light-color);
+  border-radius: 30px;
+  padding: 60px;
+  max-width: 900px;
+}
+
+.faq-subtitle {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+.faq-title {
+  font-weight: 700;
+  color:var(--primary-color);
+}
+
+.accordion-item {
+  border: none;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: white;
+  font-weight: 600;
+  padding: 18px;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: white;
+  color: var(--primary-color);
+}

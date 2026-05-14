@@ -2,16 +2,40 @@
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-    --primary-color: #f686be;
-    --secondary-color: #0a4e41;
+
+    /* Couleurs principales */
+    --primary-color: #e975b3;
+    --secondary-color: #325d67;
+
+    /* Variantes roses */
+    --pink-color: #f799c5;
+    --light-pink-color: #fbcde9;
+    --fuchsia-color: #f472b6;
+    --rose-plum-color: #c86da3;
+    --soft-pink-color: #f8c2d2;
+
+
+    /* Variantes bleu pétrole*/
+    --dark-color: #24464d;
+    --light-color: #4d7b86;
+    --soft-color: #7fa0a8;
+    --pastel-color: #c8d7db;
+    --deep-color: #1d3940;
+    --hover-color: #3d6f7a;
+
+    /* Violet */
+    --mauve-color: #8e6888;
+
+    /* Couleurs générales */
+    --white-color: #ffffff;
+    --dark-color: #212529;
+    --pearl-color: #f8f5ee;
+
+    /* Etats */
     --success-color: #00c853;
     --warning-color: #ffc107;
-    --white-color: #ffffff;
-    --accent-color: #887a05;
-    --soft-accent-color: #f4bd82;
-    --dark-color: #212529;
-    --red-color: #ED2F09;
-    --pearl-color: #f8f5ee;
+    --danger-color: #ED2F09;
+
 }
 
 .btn-primary {
