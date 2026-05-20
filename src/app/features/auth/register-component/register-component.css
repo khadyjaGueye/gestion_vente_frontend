@@ -1,0 +1,45 @@
+.container-register {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card-register {
+      display: flex;
+      width: 800px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .left-panel {
+      background-color: #fff;
+      padding: 40px;
+      flex: 1;
+    }
+
+    .right-panel {
+      background: linear-gradient(135deg, #ff6b6b, #f06595);
+      color: #fff;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-custom {
+      background-color: #f06595;
+      color: #fff;
+      border: none;
+    }
+    
+    .btn-custom:hover {
+      background-color: #e64980;
+    }
+
+    .logo {
+      width: 60px;
+      margin-bottom: 20px;
+    }

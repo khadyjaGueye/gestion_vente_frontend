@@ -2,8 +2,7 @@
   <div class="row g-4">
     <div class="col-md-4" *ngFor="let product of products">
 
-      <div class="card product-card text-white"
-           [ngStyle]="{'background-image': 'url(' + product.image + ')'}">
+      <div class="card product-card text-white" [ngStyle]="{'background-image': 'url(' + product.image + ')'}">
 
         <!-- TAG TOP RIGHT -->
         <span class="badge bg-warning text-dark product-tag">
@@ -14,8 +13,8 @@
         <div class="product-content text-center">
           <h5 class="fw-bold">{{ product.title }}</h5>
           <p class="small">{{ product.description }}</p>
-          <h4 class="price fw-bold">{{ product.price }}</h4>
-          <a href="#" class="btn btn-light btn-sm mt-2">
+          <h4 class="price fw-bold">{{ product.price }} CFA</h4>
+          <a class="btn btn-light btn-sm mt-2" (click)="addToCart(product)">
             Ajouter au panier
           </a>
         </div>
